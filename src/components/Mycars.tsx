@@ -7,9 +7,9 @@ class Mycars extends Component {
 		return (
 			<Fragment>
 				<h1>My Cars</h1>
-				<Car />
-				<Car />
-				<Car />
+				<Car color="red">Ford</Car>
+				<Car color="black">Mercedes</Car>
+				<Car color="red">Peugeot</Car>
 			</Fragment>
 		);
 	}
