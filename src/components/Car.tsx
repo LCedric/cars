@@ -1,21 +1,18 @@
+import Wrapper from './Wrapper';
+
 interface IProps {
-	color: string;
-	children: string;
+	name: string;
+	year: string;
+	color?: string;
 }
 
-const Car = ({ children, color }: IProps) => {
+const Car = ({ name, year, color }: IProps) => {
 	return (
-		<div
-			style={{
-				backgroundColor: 'pink',
-				width: '400px',
-				padding: '10px',
-				margin: '5px auto',
-			}}
-		>
-			<p>Marque: {children}</p>
-			<p>Couleur: {color} </p>
-		</div>
+		<Wrapper>
+			<p>Marque: {name}</p>
+			<p>Année: {year} </p>
+			<p>Couleur: {color ? color : 'Néant'} </p>
+		</Wrapper>
 	);
 };
 
